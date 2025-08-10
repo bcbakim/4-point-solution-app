@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -33,6 +32,19 @@
 <link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-white">
+  <!-- Netlify Forms를 위한 숨겨진 폼 -->
+  <!-- 이 폼은 사용자에게 보이지 않으며, Netlify 빌드 시스템이 폼을 인식하도록 돕는 역할을 합니다. -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="guardianName" />
+    <input type="text" name="childName" />
+    <input type="date" name="childDob" />
+    <textarea name="inquiry"></textarea>
+    <input type="checkbox" name="privacyConsent" />
+    <input type="text" name="recommendedPlan" />
+    <textarea name="diagnosisSummary"></textarea>
+    <textarea name="recommendedPlanDescription"></textarea>
+  </form>
+
   <div id="root"></div>
 <script type="module" src="/index.tsx"></script>
 </body>
