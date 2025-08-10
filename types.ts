@@ -9,19 +9,19 @@ export interface DiagnosisCheckboxes {
     lessThan30Words: boolean;
     noVerbalRequest: boolean;
     echolalia: boolean;
-    other: boolean;
+    other: string;
   };
   behavior: {
     problemBehavior: boolean;
     routineChangeDifficulty: boolean;
     specificActions: boolean;
-    other: boolean;
+    other: string;
   };
   development: {
     comprehensiveSupport: boolean;
     structuredCurriculum: boolean;
     diverseTasks: boolean;
-    other: boolean;
+    other: string;
   };
 }
 
@@ -47,6 +47,7 @@ export interface RecommendedPlan {
 
 export interface ContactFormData {
     guardianName: string;
+    guardianContact: string;
     childName:string;
     childDob: string;
     inquiry: string;
